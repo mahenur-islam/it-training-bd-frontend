@@ -43,8 +43,8 @@ function Navbar() {
   };
 
   return (
-    <AppBar position="static">
-      <Container maxWidth="xl" sx={{ background: "white" }}>
+    <AppBar position="static" sx={{ boxShadow: 'none', background: 'white' }}>
+      <Container maxWidth="xl" sx={{ background: "white"}}>
         <Toolbar disableGutters>
           <AdbIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
           <Typography
@@ -101,7 +101,7 @@ function Navbar() {
                   <Typography
                     textAlign="center"
                     sx={{
-                      color: isActive === page ? "green" : "black",
+                      color: isActive === page ? "#ffcd33" : "black",
                       fontFamily: "inter",
                       fontWeight: 600,
                     }}
@@ -135,7 +135,7 @@ function Navbar() {
           >
             It Training BD
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }}}>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             <NavSearchInput />
           </Box>
           <Box sx={{ flexGrow: 0, display: { xs: "none", md: "flex" } }}>
@@ -144,16 +144,15 @@ function Navbar() {
                 key={page}
                 onClick={() => handleSetActive(page)}
                 sx={{
-                  color: isActive === page ? "green" : "black",
+                  color: isActive === page ? "#ffcd33" : "black",
                   my: 2,
 
                   display: "block",
                   fontFamily: "inter",
                   fontWeight: 600,
-                  mr:1,
+                  mr: 1,
                   "&:hover": {
-                    color: "green",
-                    textDecoration: 'underline',
+                    color: "#ffcd33",
                     transition: "color 0.3s",
                   },
                 }}
@@ -164,7 +163,16 @@ function Navbar() {
               </Button>
             ))}
           </Box>
-          <Box sx={{flexGrow:0.1}}><Button variant="contained" sx={{backgroundColor:'green'}}>Create Free Account</Button></Box>
+          <Box sx={{ flexGrow: 0.1, ml:2 }}>
+            <Button
+              sx={{ backgroundColor: "#ffcd33", color: "black",fontWeight:'bold',border:'1px solid black', "&:hover": {
+                background: "transparent",
+                border: '1px dashed black'
+              } }}
+            >
+              Create Account
+            </Button>
+          </Box>
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
