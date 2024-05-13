@@ -8,17 +8,21 @@ export default function NavSearchInput() {
       size="small"
       sx={{
         ml: 3,
-        width: 300,
+        width: 400,
         backgroundColor: "transparent",
         "& .MuiInputBase-root.Mui-focused": {
           width: 500,
-          color: 'black'
+          backgroundColor: "#f0f0f0",
+          borderColor: "black",
+          boxShadow: "0 0 5px rgba(0, 0, 0, 0.5)",
+          padding: "2px",
+          transition: "all 0.3s ease",
         },
       }}
       InputProps={{
         startAdornment: (
           <SearchIcon
-            style={{ color: "black", marginLeft: 1, marginRight: 4 }}
+            style={{ color: "gray", marginLeft: 1, marginRight: 4 }}
           />
         ),
       }}

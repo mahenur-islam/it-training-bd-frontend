@@ -56,10 +56,9 @@ function Navbar() {
               mr: 2,
               display: { xs: "none", md: "flex" },
               fontFamily: "inter",
-              fontWeight: 500,
+              fontWeight: 700,
               letterSpacing: ".1rem",
-              color: "black",
-              textDecoration: "none",
+              color: 'black',
             }}
           >
             It Training BD.

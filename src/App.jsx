@@ -1,11 +1,13 @@
-import Navbar from "./components/shared/navbar/Navbar"
 
+import Navbar from "./components/shared/navbar/Navbar"
+import Home from './pages/Home/Home';
 function App() {
   
 
   return (
     <>
       <Navbar />
+      <Home />
     </>
   )
 }
