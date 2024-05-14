@@ -1,4 +1,5 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import DrawOutlineButton from "../../components/shared/outlineButton/DrawOutlineButton";
 
 const Hero = () => {
   return (
@@ -58,7 +59,7 @@ const Hero = () => {
                 sx={{ justifyContent: { xs: "center", md: "left" } }}
               >
                 <Grid item>
-                  <Button
+                  {/* <Button
                     sx={{
                       backgroundColor: "#ffcd33",
                       color: "black",
@@ -70,7 +71,8 @@ const Hero = () => {
                     }}
                   >
                     Get Started
-                  </Button>
+                  </Button> */}
+                  <DrawOutlineButton>Get Started</DrawOutlineButton>
                 </Grid>
                 <Grid item>
                   <Button
