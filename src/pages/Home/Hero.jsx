@@ -1,5 +1,7 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import DrawOutlineButton from "../../components/shared/outlineButton/DrawOutlineButton";
+import Characteristics from "./Characteristics";
+import Collaboration from "./Collaboration";
 
 const Hero = () => {
   return (
@@ -43,7 +45,8 @@ const Hero = () => {
                 fontSize: { xs: "2.5rem", md: "3rem", xl: "5rem" },
               }}
             >
-              Up your skills to advance your career path
+              Up your skills <br />
+              to advance your career path
             </Typography>
             <Typography
               variant="h6"
@@ -93,21 +96,26 @@ const Hero = () => {
               </Grid>
             </Box>
           </Box>
+          <Box sx={{ my: 5 }}>
+            <Characteristics />
+          </Box>
         </Grid>
         {/* Image or other content for laptop screen */}
         <Grid item xs={12} md={6} sx={{ position: "relative" }}>
-          <Box />
           <img
             src="https://i.ibb.co/N7txFmt/Untitled-design-11.png"
             alt="A woman with books on hand"
             style={{
               width: "100%",
               height: "auto",
-              display: "block",
+              // display: "block",
             }}
           />
         </Grid>
       </Grid>
+      {/* <Box className='w-full bg-gray-500'>
+        <Collaboration/>
+      </Box> */}
     </Container>
   );
 };
