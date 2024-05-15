@@ -164,9 +164,9 @@ function Navbar() {
           </Box>
           <Box sx={{ flexGrow: 0.1, ml:2 }}>
             <Button
-              sx={{ backgroundColor: "#ffcd33", color: "black",fontWeight:'bold',border:'1px solid black', "&:hover": {
+              sx={{ backgroundColor: "#ffcd33", color: "black",fontWeight:'bold', "&:hover": {
                 background: "transparent",
-                border: '1px dashed black'
+                border: '1px solid black'
               } }}
             >
               Create Account

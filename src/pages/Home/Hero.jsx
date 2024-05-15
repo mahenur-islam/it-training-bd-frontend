@@ -1,7 +1,7 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import DrawOutlineButton from "../../components/shared/outlineButton/DrawOutlineButton";
 import Characteristics from "./Characteristics";
-import Collaboration from "./Collaboration";
+// import Collaboration from "./Collaboration";
 
 const Hero = () => {
   return (
