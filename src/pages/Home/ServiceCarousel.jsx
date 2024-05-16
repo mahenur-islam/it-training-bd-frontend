@@ -1,11 +1,10 @@
-import React from 'react';
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
 import { FreeMode, Pagination } from "swiper/modules";
 import { RxArrowTopRight } from "react-icons/rx";
-import { FaPaintBrush, FaCode, FaBullhorn } from "react-icons/fa"; // Example icons
+import { FaPaintBrush, FaCode, FaBullhorn } from "react-icons/fa";
 
 const ServiceCarousel = () => {
   const ServiceData = [
