@@ -4,7 +4,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/free-mode';
 import { FreeMode, Pagination } from 'swiper/modules';
-import logo from './path/to/logo.png'; // Replace with your logo path
+
 
 const reviews = [
   {
@@ -77,7 +77,7 @@ const LearnerCarousel = () => {
                 px: 3,
               }}
             >
-              <img src={logo} alt="Logo" style={{ width: 50, margin: '0 auto 20px' }} />
+              <img src={''} alt="Logo" style={{ width: 50, margin: '0 auto 20px' }} />
               <CardContent>
                 <Typography variant="body1" fontStyle="italic" mb={3}>
                   "{review.quote}"
