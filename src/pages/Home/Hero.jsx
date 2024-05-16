@@ -1,7 +1,7 @@
 import { Box, Button, Container, Grid, Typography } from "@mui/material";
 import DrawOutlineButton from "../../components/shared/outlineButton/DrawOutlineButton";
 import Characteristics from "./Characteristics";
-// import Collaboration from "./Collaboration";
+import Collaboration from "./Collaboration";
 
 const Hero = () => {
   return (
@@ -21,7 +21,7 @@ const Hero = () => {
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
-          opacity: 0.1,
+          opacity: 0.12,
           zIndex: -1,
         },
       }}
@@ -113,9 +113,9 @@ const Hero = () => {
           />
         </Grid>
       </Grid>
-      {/* <Box className='w-full bg-gray-500'>
-        <Collaboration/>
-      </Box> */}
+      <Box className='w-full'>
+        <Collaboration />
+      </Box>
     </Container>
   );
 };
