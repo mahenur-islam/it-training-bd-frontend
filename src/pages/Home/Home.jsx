@@ -4,6 +4,7 @@ import OurServices from "./OurServices";
 import CourseCard from "../../components/shared/Cards/CourseCard";
 import Heading from "../../components/shared/heading/Heading";
 import OurTeam from "./OurTeam";
+import LearnerReview from "./LearnerReview";
 
 const Home = () => {
   return (
@@ -20,8 +21,10 @@ const Home = () => {
         <Heading title={""} subtitle={""} />
         <OurTeam />
       </Box>
+      <Box>
+        <LearnerReview />
+      </Box>
     </div>
   );
-};
-
+}
 export default Home;
