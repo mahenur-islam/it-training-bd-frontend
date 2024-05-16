@@ -5,6 +5,7 @@ import CourseCard from "../../components/shared/Cards/CourseCard";
 import Heading from "../../components/shared/heading/Heading";
 import OurTeam from "./OurTeam";
 import LearnerReview from "./LearnerReview";
+import Footer from "../../components/shared/footer/Footer";
 
 const Home = () => {
   return (
@@ -23,6 +24,9 @@ const Home = () => {
       </Box>
       <Box>
         <LearnerReview />
+      </Box>
+      <Box>
+        <Footer />
       </Box>
     </div>
   );
