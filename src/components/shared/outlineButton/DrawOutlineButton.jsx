@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
-const DrawOutlineButton = ({ children, ...rest }) => {
+const DrawOutlineButton = ({ title, ...rest }) => {
   return (
     <button
       {...rest}
       className="group relative px-4 py-2 font-medium text-black transition-colors duration-[400ms] hover:text-[#ffcd33]"
     >
-      <span>{children}</span>
+      <span>{title}</span>
 
       {/* TOP */}
       <span className="absolute left-0 top-0 h-[2px] w-0 bg-[#ffcd33] transition-all duration-100 group-hover:w-full" />

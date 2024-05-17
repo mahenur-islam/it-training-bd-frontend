@@ -17,7 +17,7 @@ const Hero = () => {
           width: "100%",
           height: "100%",
           backgroundImage:
-            'url("https://i.ibb.co/MfrJFPj/bg-it-training-bd.jpg")',
+            'url("")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -62,7 +62,7 @@ const Hero = () => {
                 sx={{ justifyContent: { xs: "center", md: "left" } }}
               >
                 <Grid item>
-                  {/* <Button
+                  <Button
                     sx={{
                       backgroundColor: "#ffcd33",
                       color: "black",
@@ -73,9 +73,8 @@ const Hero = () => {
                       },
                     }}
                   >
-                    Get Started
-                  </Button> */}
-                  <DrawOutlineButton>Get Started</DrawOutlineButton>
+                    Enroll Now
+                  </Button>
                 </Grid>
                 <Grid item>
                   <Button
@@ -103,7 +102,7 @@ const Hero = () => {
         {/* Image or other content for laptop screen */}
         <Grid item xs={12} md={6} sx={{ position: "relative" }}>
           <img
-            src="https://i.ibb.co/N7txFmt/Untitled-design-11.png"
+            src="https://i.ibb.co/N7txFmt/Untitled-esign-11.png"
             alt="A woman with books on hand"
             style={{
               width: "100%",

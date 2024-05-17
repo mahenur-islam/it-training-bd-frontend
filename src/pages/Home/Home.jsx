@@ -9,7 +9,9 @@ import PopularCourses from "./PopularCourses";
 const Home = () => {
   return (
     <div>
+      <Box className= 'px-5'>
       <Hero />
+      </Box>
       <Box className="my-10">
         <OurServices />
       </Box>

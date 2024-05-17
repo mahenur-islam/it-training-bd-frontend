@@ -4,10 +4,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/free-mode";
 import { FreeMode, Pagination } from "swiper/modules";
-import { RxArrowTopRight } from "react-icons/rx";
 import { Box, Button, Grid, Typography } from "@mui/material"; // Import Box and Typography from Material-UI
-import Rating from '@mui/material/Rating'; // Import Rating from Material-UI
-import DrawOutlineButton from "../../components/shared/outlineButton/DrawOutlineButton";
 
 const CourseCarousel = ({ data }) => {
   return (
@@ -34,7 +31,7 @@ const CourseCarousel = ({ data }) => {
           {data.map((item) => (
             <SwiperSlide key={item.title}>
               <Box
-                className="relative shadow-lg text-black rounded-xl px-0 pt-0 pb-1"
+                className="relative shadow-lg text-black rounded-xl px-0 pt-0 pb-1 hover:bg-yellow-100"
                 sx={{
                   mb: 10,
                   height: { xs: "250px", lg: "400px" },
@@ -55,40 +52,23 @@ const CourseCarousel = ({ data }) => {
                 >
                   {item.duration}
                 </Box>
-                <Box className="relative flex flex-col gap-3">
+                <Box className="relative flex flex-col gap-3 p-3">
                   <Typography
                     variant="h5"
-                    sx={{ color: item.titleColor || "white" }}
+                    sx={{ color: item.titleColor || "black" }}
                   >
                     {item.title}
                   </Typography>
                   <Typography
                     variant="body1"
-                    sx={{ color: item.subtitleColor || "white" }}
+                    sx={{ color: item.subtitleColor || "black" }}
                   >
                     {item.subTitle}
                   </Typography>
-                  <Box
-                    className="absolute bottom-5 left-5 text-white group-hover:text-blue-500"
-                    sx={{ display: 'flex', flexDirection: 'column', gap: 1 }}
-                  >
-                    <Rating
-                      name="course-rating"
-                      value={item.rating}
-                      precision={0.5}
-                      readOnly
-                    />
-                    <Typography variant="body2">
-                      {item.numRaters} raters
-                    </Typography>
-                    <Typography variant="body2">
-                      {item.enrollment} enrolled
-                    </Typography>
-                  </Box>
                 </Box>
-               <Grid container>
-                <Grid item ><DrawOutlineButton children={'Learn More'}/></Grid>
-                <Grid item ></Grid>
+               <Grid container spacing={2} className="p-2">
+                <Grid item ><Button variant="contained" >Learn More</Button></Grid>
+                <Grid item ><Button variant="outlined" >Enroll Now</Button></Grid>
                </Grid>
               </Box>
             </SwiperSlide>
