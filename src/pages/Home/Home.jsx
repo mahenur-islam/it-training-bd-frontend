@@ -10,11 +10,11 @@ const Home = () => {
   return (
     <div>
       <Hero />
-      <Box className="my-20">
+      <Box className="my-10">
         <OurServices />
       </Box>
-      <Box className="my-20">
-        <Heading title={"Most Popular Courses"} subtitle={""}/>
+      <Box className="mb-10">
+        <Heading title={"Most Popular Courses"} subtitle={"Explore more courses"}/>
        <PopularCourses />
       </Box>
       <Box className="my-20">

@@ -42,15 +42,15 @@ const ServiceCarousel = () => {
           },
           640: {
             slidesPerView: 2,
-            spaceBetween: 15,
+            spaceBetween: 10,
           },
           768: {
             slidesPerView: 2,
-            spaceBetween: 20,
+            spaceBetween: 5,
           },
           1024: {
             slidesPerView: 3,
-            spaceBetween: 30,
+            spaceBetween: 5,
           },
         }}
         freeMode={true}
@@ -62,7 +62,7 @@ const ServiceCarousel = () => {
       >
         {ServiceData.map((item) => (
           <SwiperSlide key={item.title}>
-            <div className="flex flex-col gap-6 mb-10 group relative shadow-lg text-white rounded-xl px-6 py-8 h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] w-full max-w-[215px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px] overflow-hidden cursor-pointer">
+            <div className="flex flex-col gap-3 mb-10 group relative shadow-lg text-white rounded-xl px-6 py-8 h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] w-full max-w-[300px] overflow-hidden cursor-pointer">
               <div
                 className="absolute inset-0 bg-cover bg-center blur-sm"
                 style={{ backgroundImage: `url(${item.backgroundImage})` }}
