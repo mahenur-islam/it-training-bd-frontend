@@ -30,7 +30,7 @@ const CourseCard = () => {
       justifyContent="center"
       gap={4}
       p={4}
-      bgcolor="#f5f5f5"
+      bgcolor="#ffcc"
     >
       {courseData.map((course) => (
         <Box
@@ -39,9 +39,8 @@ const CourseCard = () => {
           borderRadius="12px"
           overflow="hidden"
           boxShadow={3}
-          maxWidth="300px"
           textAlign="center"
-          className="group"
+          className="flex flex-col gap-6 mb-10 group relative shadow-lg text-white rounded-xl px-6 py-8 h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] w-full max-w-[215px] sm:max-w-[250px] md:max-w-[300px] lg:max-w-[350px] overflow-hidden cursor-pointer"
         >
           <Box component="img" src={course.image} alt={course.title} width="100%" height="200px" />
           <Box p={2}>

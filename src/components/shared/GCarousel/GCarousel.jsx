@@ -7,7 +7,7 @@ import { FreeMode, Pagination } from "swiper/modules";
 import { Box, Typography } from "@mui/material";
 import { RxArrowTopRight } from "react-icons/rx";
 
-const GeneralCarousel = ({ data, height, titleColor, subTitleColor }) => {
+const GCarousel = ({ data, height, titleColor, subTitleColor }) => {
   return (
     <Box sx={{ my: 20, height: height || '900px' }}>
       <Swiper
@@ -70,4 +70,4 @@ const GeneralCarousel = ({ data, height, titleColor, subTitleColor }) => {
   );
 };
 
-export default GeneralCarousel;
+export default GCarousel;

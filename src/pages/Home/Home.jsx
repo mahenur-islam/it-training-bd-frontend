@@ -1,10 +1,10 @@
 import { Box } from "@mui/material";
 import Hero from "./Hero";
 import OurServices from "./OurServices";
-import CourseCard from "../../components/shared/Cards/CourseCard";
 import Heading from "../../components/shared/heading/Heading";
 import OurTeam from "./OurTeam";
 import LearnerReview from "./LearnerReview";
+import PopularCourses from "./PopularCourses";
 
 const Home = () => {
   return (
@@ -14,8 +14,8 @@ const Home = () => {
         <OurServices />
       </Box>
       <Box className="my-20">
-        <Heading title={"Most Popular Courses"} subtitle={""} />
-        <CourseCard />
+        <Heading title={"Most Popular Courses"} subtitle={""}/>
+       <PopularCourses />
       </Box>
       <Box className="my-20">
         <Heading title={""} subtitle={""} />
